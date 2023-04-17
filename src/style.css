@@ -1,7 +1,56 @@
 :root {
   --main-font: "Playfair Display", serif;
+  --blue-sky: rgb(147, 252, 252);
+}
+header {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/images/pexels-nadiia-9244851.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px;
+  border-radius: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 h1 {
+  color: var(--blue-sky);
   font-family: var(--main-font);
-  font-size: 96px;
+  font-size: 75px;
+}
+h2 {
+  color: var(--blue-sky);
+  font-family: var(--main-font);
+  font-size: 45px;
+}
+h3 {
+  color: rgb(0, 161, 30);
+  font-family: "Rubik Pixels", cursive;
+  font-size: 40px;
+}
+button {
+  color: rgb(0, 0, 0);
+  background-color: var(--blue-sky);
+  font-size: 20px;
+  font-family: "Rubik Pixels", cursive;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+@media (max-width: 900px) {
+  header {
+    padding: 30px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  button {
+    font-size: 10px;
+  }
 }
