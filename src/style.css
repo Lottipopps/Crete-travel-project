@@ -1,0 +1,7 @@
+:root {
+  --main-font: "Playfair Display", serif;
+}
+h1 {
+  font-family: var(--main-font);
+  font-size: 96px;
+}
