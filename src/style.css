@@ -2,6 +2,7 @@
   --main-font: "Playfair Display", serif;
   --fun-font: "Rubik Pixels", cursive;
   --blue-sky: rgb(170, 252, 252);
+  --link-color: rgb(250, 238, 4);
 }
 body {
   background: rgb(18, 18, 86);
@@ -107,7 +108,7 @@ section a,
 footer a {
   font-family: var(--main-font);
   text-decoration: none;
-  color: var(--blue-sky);
+  color: var(--link-color);
   transition: all 150ms ease-in-out;
 }
 section a:hover,
@@ -176,6 +177,9 @@ blockquote {
     grid-template-columns: 1fr;
     grid-gap: 5px;
     padding: 50px 30px;
+  }
+  .cards {
+    padding: 0px;
   }
   .card-header,
   .insta {
