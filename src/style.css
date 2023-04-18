@@ -47,7 +47,7 @@ p {
   line-height: 1.5;
 }
 section {
-  background: var(--blue-sky);
+  background: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 100px 60px;
