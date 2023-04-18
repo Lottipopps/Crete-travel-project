@@ -41,6 +41,13 @@ header button {
   padding: 10px 15px;
   border-radius: 20px;
 }
+header button a {
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+header button a:hover {
+  color: rgb(0, 161, 30);
+}
 p {
   font-family: var(--main-font);
   font-size: 16px;
@@ -93,13 +100,15 @@ img {
   display: block;
   margin: 0 auto;
 }
-a {
+section a,
+footer a {
   font-family: var(--main-font);
   text-decoration: none;
   color: var(--blue-sky);
   transition: all 150ms ease-in-out;
 }
-a:hover {
+section a:hover,
+footer a:hover {
   color: rgb(0, 161, 30);
 }
 footer {
@@ -147,6 +156,13 @@ footer li {
   padding: 10px 20px;
   text-align: center;
 }
+.insta {
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+}
+blockquote {
+  width: 100%;
+}
 @media (max-width: 900px) {
   footer,
   .section-1,
@@ -155,8 +171,10 @@ footer li {
     grid-gap: 5px;
     padding: 50px 30px;
   }
-  .card-header {
+  .card-header,
+  .insta {
     grid-template-columns: 1fr;
+    padding: 0px;
   }
   .card-header img {
     display: none;
